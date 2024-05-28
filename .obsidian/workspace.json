@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2d2681e3bd7eff03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "这是测试1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "这是测试1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "这是测试1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "这是测试1.md"
               }
             }
           }
@@ -146,6 +159,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8362667d44a64b42",
-  "lastOpenFiles": []
+  "active": "2d2681e3bd7eff03",
+  "lastOpenFiles": [
+    "README.md",
+    "这是测试1.md"
+  ]
 }
