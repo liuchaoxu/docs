@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b0ab40baaeca7672",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Nginx配置文件.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "这是测试5.md",
+                "file": "Nginx配置文件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "这是测试5.md",
+                "file": "Nginx配置文件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "这是测试5.md"
+                "file": "Nginx配置文件.md"
               }
             }
           }
@@ -146,9 +159,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "54d168c7054bfd4e",
+  "active": "2ea33dca5d2d91e3",
   "lastOpenFiles": [
-    "README.md",
-    "这是测试5.md"
+    "这是测试5.md",
+    "Nginx配置文件.md",
+    "Nginx",
+    "README.md"
   ]
 }
