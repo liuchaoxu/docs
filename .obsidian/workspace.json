@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "54d168c7054bfd4e",
+            "id": "b0ab40baaeca7672",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "这是测试5.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b0ab40baaeca7672",
+            "id": "969c5b9fd5c3d051",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nginx/Nginx配置文件.md",
+                "file": "MySQL/MySQL索引.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Nginx/Nginx配置文件.md",
+                "file": "MySQL/MySQL索引.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Nginx/Nginx配置文件.md",
+                "file": "MySQL/MySQL索引.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Nginx/Nginx配置文件.md"
+                "file": "MySQL/MySQL索引.md"
               }
             }
           }
@@ -159,11 +159,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2ea33dca5d2d91e3",
+  "active": "969c5b9fd5c3d051",
   "lastOpenFiles": [
+    "README.md",
+    "MySQL/MySQL索引.md",
+    "friend-link.md",
+    "MySQL",
+    "index.md",
     "这是测试5.md",
     "Nginx/Nginx配置文件.md",
-    "Nginx",
-    "README.md"
+    "Nginx"
   ]
 }
