@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "知识地图.md",
                 "mode": "source",
                 "source": false
               }
@@ -27,12 +27,11 @@
               "state": {
                 "file": "MySQL/MySQL索引.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MySQL/MySQL索引.md",
+                "file": "知识地图.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MySQL/MySQL索引.md",
+                "file": "知识地图.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MySQL/MySQL索引.md"
+                "file": "知识地图.md"
               }
             }
           }
@@ -159,15 +158,25 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "969c5b9fd5c3d051",
+  "active": "b0ab40baaeca7672",
   "lastOpenFiles": [
-    "README.md",
+    "index.md",
+    "Nginx/Nginx配置文件.md",
+    "docs/Nginx/Nginx配置文件.md",
+    "知识地图.md",
+    "docs/Nginx",
     "MySQL/MySQL索引.md",
+    "docs/MySQL/MySQL索引.md",
+    "docs/MySQL",
+    "docs/Mysql.md",
+    "docs",
+    "README.md",
+    "编程记录.md",
+    "文章存档.md",
+    "工作生活.md",
     "friend-link.md",
     "MySQL",
-    "index.md",
     "这是测试5.md",
-    "Nginx/Nginx配置文件.md",
     "Nginx"
   ]
 }
