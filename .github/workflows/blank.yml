@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with: 
-          repository: liuchaoxu/quick-home
+          repository: liuchaoxu/liuchaoxu.github.io
           token: ${{ secrets.PRIVATE_TOKEN_GITHUB }}
           submodules: true
  
