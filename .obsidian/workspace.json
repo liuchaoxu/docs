@@ -15,7 +15,7 @@
               "state": {
                 "file": "MySQL/MySQL索引.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -148,21 +148,25 @@
   },
   "active": "969c5b9fd5c3d051",
   "lastOpenFiles": [
+    "MySQL/image/Pasted image 20240529100604.png",
+    "MySQL/MySQL索引.md",
+    "编程记录.md",
+    "MySQL/image",
+    "MySQL/code",
+    "工作生活.md",
+    "index.md",
+    "Pasted image 20240529100449.png",
+    "文章存档.md",
+    "friend-link.md",
+    "知识地图.md",
+    "Nginx/Nginx配置文件.md",
     "docs/MySQL/MySQL索引.md",
     "docs/Mysql.md",
-    "知识地图.md",
-    "index.md",
-    "Nginx/Nginx配置文件.md",
     "docs/Nginx/Nginx配置文件.md",
     "docs/Nginx",
-    "MySQL/MySQL索引.md",
     "docs/MySQL",
     "docs",
     "README.md",
-    "编程记录.md",
-    "文章存档.md",
-    "工作生活.md",
-    "friend-link.md",
     "MySQL",
     "这是测试5.md",
     "Nginx"
