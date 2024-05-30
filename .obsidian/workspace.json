@@ -14,8 +14,8 @@
               "type": "markdown",
               "state": {
                 "file": "MySQL/MySQL索引.md",
-                "mode": "source",
-                "source": false
+                "mode": "preview",
+                "source": true
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "969c5b9fd5c3d051",
   "lastOpenFiles": [
-    "MySQL/image/Pasted image 20240529100604.png",
+    "MySQL/MySQL高级.md",
     "MySQL/MySQL索引.md",
+    "MySQL/image/Pasted image 20240529100604.png",
     "MySQL/code/test.sql",
     "MySQL/code/新建 文本文档.txt",
     "MySQL/code/新建文件夹",
