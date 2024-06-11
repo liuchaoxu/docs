@@ -1,3 +1,43 @@
+---
+layout: doc
+lang: zh-CN
+title: JUC
+titleTemplate: spring
+description: 原理解析
+#导航栏
+#navbar: true
+#侧边栏
+sidebar: true
+#侧边大纲默认在右侧 ，通过 aside 设置左侧或关闭，默认 true
+aside: true
+#右侧的大纲，默认显示是二级标题，通过设置 outline 实现多级标题
+#注意:设置到六级标题可以用 'deep' ，关闭 false,此设置与 页面中的大纲 设置相同，会覆盖！
+#outline: [2,3]
+outline: [1,2,3,4,5,6]
+#上次更新时间，默认开启，不想显示可以关闭
+lastUpdated: false
+
+#仅更改上/下页显示的文字，跳转还是按照侧边栏配置的读取的
+#prev: '页面 | 更详细的页面配置'
+#next: 'Markdown | 更详细的markdown'
+
+#更改跳转链接
+#  可更改成任意自己想跳转的文章
+prev:
+  text: '知识地图'
+  link: '../知识地图'
+#next:
+#  text: 'Markdown'
+#  link: '/markdown'
+
+#  不想显示可以选择关闭
+#prev: false
+next: false
+#页脚
+footer: false
+
+---
+# Spring
 ## 01 对Spring中IOC的理解
 
 **IOC即“控制反转”，不是什么技术，而是一种设计思想。IOC意味着将你设计好的对象交给容器控制，而不是传统的在你的对象内部直接控制**

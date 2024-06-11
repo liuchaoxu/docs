@@ -13,10 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识地图.md",
+                "file": "Java/Java框架/Spring相关.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "6b38586062fd8e0d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "知识地图.md",
+                "file": "Java/Java框架/Spring相关.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "知识地图.md",
+                "file": "Java/Java框架/Spring相关.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "知识地图.md"
+                "file": "Java/Java框架/Spring相关.md"
               }
             }
           }
@@ -148,8 +156,12 @@
   },
   "active": "160f854ce2aab21f",
   "lastOpenFiles": [
-    "Java/Java框架/Spring相关.md",
     "知识地图.md",
+    "docs/Java/Java框架/Spring相关.md",
+    "docs/Java/Java框架",
+    "docs/Java",
+    "docs",
+    "Java/Java框架/Spring相关.md",
     "Java/JUC.md",
     "Java/Java框架",
     "未命名",
@@ -166,7 +178,6 @@
     "MySQL/code/test.sql.md",
     "编程记录.md",
     "MySQL/image",
-    "MySQL/code",
     "工作生活.md",
     "Pasted image 20240529100449.png",
     "文章存档.md",
@@ -174,8 +185,6 @@
     "docs/MySQL/MySQL索引.md",
     "docs/Mysql.md",
     "docs/Nginx/Nginx配置文件.md",
-    "docs/Nginx",
-    "docs/MySQL",
     "README.md",
     "这是测试5.md"
   ]
