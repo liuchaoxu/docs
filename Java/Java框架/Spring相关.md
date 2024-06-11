@@ -25,7 +25,7 @@ lastUpdated: false
 #  可更改成任意自己想跳转的文章
 prev:
   text: '知识地图'
-  link: '../知识地图'
+  link: '../../知识地图'
 #next:
 #  text: 'Markdown'
 #  link: '/markdown'
