@@ -99,3 +99,25 @@ ThreadPoolExecutor自带的拒绝策略如下：
 在实际应用中，选择合适的拒绝策略需要根据具体的应用场景和系统设计来定。如果任务不能丢失，且系统能够承受提交线程处理任务的性能影响，`CallerRunsPolicy` 是一个不错的选择。
 
 **以上内置的策略均实现了RejectedExecutionHandler接口，也可以自己扩展RejectedExecutionHandler接口，定义自己的拒绝策略**
+简单示例：
+```java
+// 自定义连接池
+ExecutorService threadPool = new ThreadPoolExecutor(
+				2, 
+				5,
+                2,
+                TimeUnit.SECONDS,
+                new ArrayBlockingQueue<>(3),
+                Executors.defaultThreadFactory(),
+                //new ThreadPoolExecutor.AbortPolicy()
+                //new ThreadPoolExecutor.CallerRunsPolicy()
+                //new ThreadPoolExecutor.DiscardOldestPolicy()
+                //new ThreadPoolExecutor.DiscardPolicy()
+		        new RejectedExecutionHandler() {
+                    @Override
+                    public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
+                        System.out.println("自定义拒绝策略");
+                    }
+                }
+        );
+```
