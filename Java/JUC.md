@@ -167,3 +167,123 @@ JMM对共享内存的操作做出了如下两条规定：
     - volatile关键字本身就包含了禁止指令重排序的语义
         
     - synchronized则是由“一个变量在同一个时刻只允许一条线程对其进行lock操作”这条规则获得的，这个规则决定了持有同一个锁的两个同步块只能串行地进入
+
+## volatile关键字（保证内存可见性）
+验证volatile关键字保证内存可见性：
+```java
+public class VolatileDemo {
+
+    private static [volatile] Integer flag = 1;
+
+    public static void main(String[] args)  throws InterruptedException {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("我是子线程工作内存flag的值：" + flag);
+                while(flag == 1){
+                }
+                System.out.println("子线程操作结束..." + flag);
+            }
+        }).start();
+        Thread.sleep(500);
+        flag = 2;
+        System.out.println("我是主线程工作内存flag的值：" + flag);
+    }
+}
+```
+**没有添加**volatile关键字:
+子线程读取不到主线程修改后的flag值，陷入死循环程序无法结束。
+**添加**volatile关键字:
+子线程可以读取的新值并结束子线程。
+
+## CAS
+
+CAS：Compare and Swap。比较并交换的意思。CAS操作有3个基本参数：内存地址A，旧值B，新值C。它的作用是将指定内存地址A的内容与所给的旧值B相比，如果相等，则将其内容替换为指令中提供的新值C；如果不等，则更新失败。类似于修改登陆密码的过程。当用户输入的原密码和数据库中存储的原密码相同，才可以将原密码更新为新密码，否则就不能更新。
+
+**CAS是解决多线程并发安全问题的一种乐观锁算法。** 因为它在对共享变量更新之前，会先比较当前值是否与更新前的值一致，如果一致则更新，如果不一致则循环执行（称为自旋锁），直到当前值与更新前的值一致为止，才执行更新。
+
+Unsafe类是CAS的核心类，提供**硬件级别的原子操作**（目前所有CPU基本都支持硬件级别的CAS操作）。
+
+```java
+// 对象、对象的属性地址偏移量、预期值、修改值1  
+public final native boolean compareAndSwapInt(Object var1, long var2, int var4, int var5);
+```
+
+Unsafe简单demo：
+```java
+
+public class UnsafeDemo {  
+​  
+    private int number = 0;  
+​  
+    public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {  
+        UnsafeDemo unsafeDemo = new UnsafeDemo();  
+        System.out.println(unsafeDemo.number);// 修改前  
+        unsafeDemo.compareAndSwap(0, 30);  
+        System.out.println(unsafeDemo.number);// 修改后  
+    }  
+​  
+    public void compareAndSwap(int oldValue, int newValue){  
+        try {  
+            // 通过反射获取Unsafe类中的theUnsafe对象  
+            Field theUnsafe = Unsafe.class.getDeclaredField("theUnsafe");  
+            theUnsafe.setAccessible(true); // 设置为可见  
+            Unsafe unsafe = (Unsafe) theUnsafe.get(null); // 获取Unsafe对象  
+            // 获取number的偏移量  
+            long offset = unsafe.objectFieldOffset(UnsafeDemo.class.getDeclaredField("number"));  
+            // cas操作  
+            unsafe.compareAndSwapInt(this, offset, oldValue, newValue);  
+        } catch (NoSuchFieldException e) {  
+            e.printStackTrace();  
+        } catch (IllegalAccessException e) {  
+            e.printStackTrace();  
+        }  
+    }  
+}
+```
+
+### 基本代码演示
+
+在JUC下有个atomic包，有很多原子操作的包装类。
+这里以AtomicInteger这个类来演示：
+```java
+
+public class CasDemo {  
+​  
+    public static void main(String[] args) {  
+        AtomicInteger i = new AtomicInteger(1);  
+        System.out.println("第一次更新：" + i.compareAndSet(1, 200));  
+        System.out.println("第一次更新后i的值：" + i.get());  
+        System.out.println("第二次更新：" + i.compareAndSet(1, 300));  
+        System.out.println("第二次更新后i的值：" + i.get());  
+        System.out.println("第三次更新：" + i.compareAndSet(200, 300));  
+        System.out.println("第三次更新后i的值：" + i.get());  
+    }  
+}
+```
+
+输出结果如下：
+```cmd
+第一次更新：true  
+第一次更新后i的值：200  
+第二次更新：false  
+第二次更新后i的值：200  
+第三次更新：true  
+第三次更新后i的值：300
+```
+
+
+结果分析：
+
+```cmd
+第一次更新：i的值（1）和预期值（1）相同，所以执行了更新操作，把i的值更新为200  
+第二次更新：i的值（200）和预期值（1）不同，所以不再执行更新操作  
+第三次更新：i的值（200）和预期值（1）相同，所以执行了更新操作，把i的值更新为300
+```
+### 缺点
+
+**开销大**：在并发量比较高的情况下，如果反复尝试更新某个变量，却又一直更新不成功，会给CPU带来较大的压力
+
+**ABA问题**：当变量从A修改为B再修改回A时，变量值等于期望值A，但是无法判断是否修改，CAS操作在ABA修改后依然成功。
+
+**不能保证代码块的原子性**：CAS机制所保证的只是一个变量的原子性操作，而不能保证整个代码块的原子性。
