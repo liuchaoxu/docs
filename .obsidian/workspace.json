@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识地图.md",
+                "file": "Nginx/Nginx配置文件.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           },
@@ -23,11 +23,16 @@
             "id": "6b38586062fd8e0d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "知识地图.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -154,18 +159,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "160f854ce2aab21f",
+  "active": "6b38586062fd8e0d",
   "lastOpenFiles": [
-    "Java/JavaFramework/Spring相关.md",
-    "知识地图.md",
-    "Nginx/Nginx配置文件.md",
-    "Git/Git使用.md",
     "friend-link.md",
+    "Git/GitUse.md",
+    "知识地图.md",
+    "Java/JavaFramework/Spring相关.md",
+    "Nginx/Nginx配置文件.md",
+    "docs/Git/Git使用.md",
+    "docs/Git",
+    "docs",
     "index.md",
     "Git",
     "docs/Nginx/Nginx配置文件.md",
     "docs/Nginx",
-    "docs",
     "MySQL/面试题.md",
     "文章存档.md",
     "MySQL/MySQL索引.md",
@@ -180,7 +187,6 @@
     "MySQL/MySQL高级.md",
     "MySQL/code/test.sql",
     "MySQL/code/新建 文本文档.txt",
-    "MySQL/code/新建文件夹",
     "MySQL/code/test.sql.md",
     "编程记录.md",
     "工作生活.md",
