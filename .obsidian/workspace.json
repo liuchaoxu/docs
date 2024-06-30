@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MySQL/面试题.md",
+                "file": "Git/Git使用.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MySQL/面试题.md",
+                "file": "Git/Git使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MySQL/面试题.md",
+                "file": "Git/Git使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MySQL/面试题.md"
+                "file": "Git/Git使用.md"
               }
             }
           }
@@ -156,7 +156,13 @@
   },
   "active": "160f854ce2aab21f",
   "lastOpenFiles": [
+    "Nginx/Nginx配置文件.md",
+    "Git/Git使用.md",
+    "Git",
     "知识地图.md",
+    "docs/Nginx/Nginx配置文件.md",
+    "docs/Nginx",
+    "docs",
     "MySQL/面试题.md",
     "文章存档.md",
     "MySQL/MySQL索引.md",
@@ -166,9 +172,7 @@
     "docs/Java/Java框架/Spring相关.md",
     "docs/Java/Java框架",
     "docs/Java",
-    "docs",
     "Java/JavaFramework",
-    "未命名",
     "Java",
     "index.md",
     "friend-link.md",
@@ -179,13 +183,10 @@
     "MySQL/code/新建文件夹",
     "MySQL/code/test.sql.md",
     "编程记录.md",
-    "MySQL/image",
     "工作生活.md",
     "Pasted image 20240529100449.png",
-    "Nginx/Nginx配置文件.md",
     "docs/MySQL/MySQL索引.md",
     "docs/Mysql.md",
-    "docs/Nginx/Nginx配置文件.md",
     "README.md",
     "这是测试5.md"
   ]
