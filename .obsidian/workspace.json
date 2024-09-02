@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识地图.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "知识地图.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "知识地图.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "知识地图.md"
+                "file": "index.md"
               }
             }
           }
@@ -161,20 +161,23 @@
   },
   "active": "6b38586062fd8e0d",
   "lastOpenFiles": [
+    "README.md",
+    "index.md",
+    "知识地图.md",
+    "编程记录.md",
+    "工作生活.md",
+    "文章存档.md",
     "friend-link.md",
     "Git/GitUse.md",
-    "知识地图.md",
     "Java/JavaFramework/Spring相关.md",
     "Nginx/Nginx配置文件.md",
     "docs/Git/Git使用.md",
     "docs/Git",
     "docs",
-    "index.md",
     "Git",
     "docs/Nginx/Nginx配置文件.md",
     "docs/Nginx",
     "MySQL/面试题.md",
-    "文章存档.md",
     "MySQL/MySQL索引.md",
     "Java/JUC.md",
     "MySQL/事物_隔离级别.md",
@@ -188,12 +191,9 @@
     "MySQL/code/test.sql",
     "MySQL/code/新建 文本文档.txt",
     "MySQL/code/test.sql.md",
-    "编程记录.md",
-    "工作生活.md",
     "Pasted image 20240529100449.png",
     "docs/MySQL/MySQL索引.md",
     "docs/Mysql.md",
-    "README.md",
     "这是测试5.md"
   ]
 }

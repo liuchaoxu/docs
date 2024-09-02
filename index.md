@@ -8,3 +8,5 @@ hero:
       src: /image/主页.png
       alt: VitePress
 ---
+
+程序员  OR 工程师 OR 技术专家
