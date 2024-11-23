@@ -25,9 +25,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Git/GitUse.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Git/GitUse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "Git/GitUse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Git/GitUse.md"
               }
             }
           }
@@ -161,22 +161,22 @@
   },
   "active": "6b38586062fd8e0d",
   "lastOpenFiles": [
-    "README.md",
-    "index.md",
+    "Nginx/Nginx配置文件.md",
     "知识地图.md",
-    "编程记录.md",
-    "工作生活.md",
+    "Git/GitUse.md",
     "文章存档.md",
     "friend-link.md",
-    "Git/GitUse.md",
-    "Java/JavaFramework/Spring相关.md",
-    "Nginx/Nginx配置文件.md",
-    "docs/Git/Git使用.md",
-    "docs/Git",
-    "docs",
-    "Git",
+    "index.md",
     "docs/Nginx/Nginx配置文件.md",
     "docs/Nginx",
+    "docs",
+    "README.md",
+    "编程记录.md",
+    "工作生活.md",
+    "Java/JavaFramework/Spring相关.md",
+    "docs/Git/Git使用.md",
+    "docs/Git",
+    "Git",
     "MySQL/面试题.md",
     "MySQL/MySQL索引.md",
     "Java/JUC.md",
